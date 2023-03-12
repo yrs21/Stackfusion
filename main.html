@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+.a{
+background:black;
+border-radius:50%;
+height:25px;
+width:25px;
+float:left;
+position:absolute;
+top:-25px;
+left:100px;
+margin-left:200px;
+animation-name:fall;
+animation-duration:3s;
+animation-iteration-count:infinite;
+}
+.b{
+background:black;
+border-radius:50%;
+height:25px;
+width:25px;
+float:left;
+position:absolute;
+top:-25px;
+left:200px;
+margin-left:300px;
+animation-name:fall;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-delay:2s;
+}
+.c{
+background:black;
+border-radius:50%;
+height:25px;
+width:25px;
+float:left;
+position:absolute;
+top:-25px;
+left:300px;
+margin-left:400px;
+animation-name:fall;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-delay:3s;
+}
+.d{
+background:black;
+border-radius:50%;
+height:25px;
+width:25px;
+float:left;
+position:absolute;
+top:-25px;
+left:400px;
+margin-left:500px;
+animation-name:fall;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-delay:4s;
+}
+.e{
+background:black;
+border-radius:50%;
+height:25px;
+width:25px;
+float:left;
+position:absolute;
+top:-25px;
+left;500px;
+margin-left:1200px;
+animation-name:fall;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-delay:5s;
+}
+body{
+background:url(img.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+#box{
+background:rgba(255,255,255,0.6);
+min-height:300px;
+width:400px;
+margin:10vh auto;
+color:white;
+border-radius:30px;
+text-transform:uppercase;
+transition:all 1s;
+}
+form{
+padding:7%;
+}
+.text{
+width:80%;
+height:40px;
+margin-bottom:12px;
+border-radius:50px;
+border:none;
+box-shadow:0px 0px 10px 1px black;
+border:2px solid purple;
+}
+.btn{
+width:50%;
+height:40px;
+margin-left:110px;
+border-radius:50px;
+border:none;
+margin-top:15px;
+font-size:18px;
+font-weight:bold;
+letter-spacing:1px;
+text-transform:uppercase;
+background:linear-gradient(to left,red,black);
+border:2px solid purple;
+transition:all 2s;
+color:white;
+}
+.btn:hover{
+border:2px solid gold;
+background:linear-gradient(90deg,red,yellow);
+transition:all 2s;
+color:black;
+box-shadow:0px 0px 8px 1px black;
+}
+#box:hover{
+transform:scale(1.1);
+transition:all 1s;
+box-shadow:0px 0px 20px 3px white;
+background:linear-gradient(90deg,purple,aqua);
+}
+@media (min-width:600px) and (max-width:1000px){
+body{
+background:url(i.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+#box{
+background:rgba(0,0,0,0.5);
+}
+}
+p{
+font-size:40px;
+font-weight:bold;
+color:white;
+text-align:center;
+margin-top:60px;
+font-family:Arial;
+letter-spacing:2px;
+text-shadow:3px 4px 6px aqua,6px 8px 6px red;
+}
+p:hover{
+background:linear-gradient(100deg,red,orange);
+border-radius:40px;
+border:2px groove aqua;
+margin-left:38vw;
+margin-right:38vw;
+transition:all 2s;
+}
+@keyframes fall{
+from{
+background:gold;
+height:60px;
+width:60px;
+border-radius:50%;
+}
+to{
+background:aqua;
+height:30px;
+width:30px;
+border-radius:50%;
+top:680px;
+}
+}
+</style>
+</head>
+<body>
+<p>USER FORM</p>
+<div id="box">
+<form method="post" enctype="multipart">
+Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required placeholder="Name..." class="text"/><br/>
+Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" class="text"><br/>
+Email:&nbsp;&nbsp;&nbsp;<input type="email" required placeholder="Email..."class="text" /><br/>
+MobNo:&nbsp;<input type="text" required placeholder="Phone No. ..." class="text"/><br/>
+<input type="submit" value="submit" class="btn"/>
+</form>
+</div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="c"></div>
+<div class="d"></div>
+<div class="e"></div>
+<div class="f"></div>
+</body>
+</html>
